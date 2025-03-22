@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹프로그래밍 데모</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="team.html">Team</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--메인 섹션-->
+    <section class="main">
+      <div class="container">
+        <h1>웹프로그래밍. Web Programming.</h1>
+
+        <h3>
+          웹 개발자를 위한 온라인 매뉴얼:
+          <a href="https://www.w3schools.com/"
+            >W3Schools: 웹프로그래밍 매뉴얼</a
+          >
+        </h3>
+
+        <p>
+          웹프로그래밍의 3가지 요소:
+          <a href="https://www.w3schools.com/html/default.asp">HTML5</a> |
+          <a href="https://www.w3schools.com/css/default.asp">CSS3</a> |
+          <a href="https://www.w3schools.com/js/default.asp">Javascript</a>
+        </p>
+
+        <p>현재 시간 : <span id="time"></span></p>
+        <hr />
+        <script>
+          function updateTime() {
+            const now = new Date()
+            const dateString = now.toLocaleDateString()
+            const timeString = now.toLocaleTimeString()
+            document.getElementById(
+              'time'
+            ).textContent = `${dateString} ${timeString}`
+          }
+          setInterval(updateTime, 1000)
+          updateTime() // 페이지 로드 시 즉시 시간 표시
+        </script>
+        <p>
+          배경색 바꾸기:
+          <button onclick="pink()">Pink</button>
+          <button onclick="lightblue()">Lightblue</button>
+          <button onclick="yellow()">Yellow</button>
+          <button onclick="reset()">Reset</button>
+        </p>
+        <p>
+          배워봅시다:
+          <button onmouseover="showhtml()" onmouseout="hide()">HTML5</button>
+          <button onmouseover="showcss()" onmouseout="hide()">CSS3</button>
+          <button onmouseover="showjs()" onmouseout="hide()">Javascript</button>
+        </p>
+        <hr />
+        <br />
+        <div>
+          <img id="fig" height="200px" />
+          <p id="desc"></p>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
