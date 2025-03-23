@@ -5,44 +5,41 @@
 }
 
 body {
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  background: linen;
-}
-
-ul {
-  list-style-type: none;
+  background-color: linen; /*배경색*/
+  color: #333; /*글자색*/
+  font-size: 17px; /*글자크기*/
+  line-height: 1.5; /*문단 간격*/
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 30px;
 }
 
 .main {
-  color: blue;
-  line-height: 2.5;
+  color: darkslategrey;
+  line-height: 2;
 }
 
 .navbar {
   background-color: black;
-  color: #fff;
+  color: white;
   height: 60px;
 }
 
 .navbar .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between; /*정렬 기능.*/
+  align-items: center; /*세로 정렬*/
   height: 100%;
 }
 
 .navbar ul {
   display: flex;
   flex-direction: row;
+  list-style-type: none; /*앞에 메뉴 점 없애기*/
 }
 
 .navbar ul li {
@@ -55,28 +52,27 @@ ul {
 }
 
 .navbar a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
+  color: white;
+  text-decoration: none; /*기본적으로 텍스트에 밑줄이 쳐지는데 그 스타일을 바꾸는 함수*/
   font-weight: bold;
 }
 
 .navbar a:hover {
-  border-bottom: 2px #fff solid;
-  color: #ddd;
+  border-bottom: 2px yellow solid; /*마우스 올라갔을 때 반응하게 하는 함수*/
+  color: yellow;
 }
 
 button {
-  padding: 5px 10px;
-  margin: 5px 10px;
-  font-size: large;
-  font-weight: bold;
-  background-color: lightgrey;
-  /* border-radius: 10px;
-  border-width: 0px; */
+  /*.찍은거 안찍은거 차이는 . 안찍는 건 html에서 해당하는 태그 모두 적용 .찍는건 class로 지정해둔거만 해당하는거에 적용*/
+  padding: 6px 10px; /*버튼 위아래 좌우 크기 지정*/
+  margin: 5px 5px; /*버튼 간의 여백 위아래 좌우 크기 지정*/
+  font-size: 12px; /*버튼 글씨 크기 지정*/
+  font-weight: bold; /*버튼 글씨체 굵기 지정*/
+  background-color: lightcyan;
+  border-radius: 5px; /*버튼 모서리 둥글게 하기*/
 }
 
 button:hover {
-  color: red;
-  background-color: yellow;
+  background-color: rgb(7, 141, 143);
+  color: white;
 }

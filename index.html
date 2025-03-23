@@ -1,87 +1,98 @@
 <!DOCTYPE html>
+<!--Html을 선언하는 함수-->
 <html lang="en">
   <head>
+    <!--여는태그-->
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--동작파일은 UTF-8이다-->
+    <!--meta는 속성선언-->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>웹프로그래밍 데모</title>
+    <title>웹프로그래밍</title>
     <link rel="stylesheet" href="style.css" />
+    <!--title태그를 바꿔주는 것 (위에뜨는 주소이름)-->
   </head>
+  <!--닫는태그-->
   <body>
-    <nav class="navbar">
+    
+    <!-- 메뉴 -->
+    <nav class="navbar"> 
+      <!--class는 이름 설정(디자인으로 쓸 때 쓰는 설정정.)-->
       <div class="container">
         <div class="logo">WebDemo</div>
+        <!--div.logo라고 쳐도 자동 완성 된다.-->
         <ul class="nav">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="about.html">About</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-          <li>
-            <a href="team.html">Team</a>
-          </li>
+          <li> <a href="/">Home</a> </li> <!--링크 넣는 코드-->
+          <li> <a href="about.html">About</a></li>
+          <li> <a href="contact.html">Contact</a></li>
+          <li> <a href="team.html">Projects</a></li>
         </ul>
-      </div>
-    </nav>
+      
 
-    <!--메인 섹션-->
+
+      </div>
+    </nav> <!--메뉴를 만드는 함수 nav (네비게이션) -->
+      
+
+
+
+    <!-- 메인섹션 -->
     <section class="main">
       <div class="container">
-        <h1>웹프로그래밍. Web Programming.</h1>
+        <h1>웹프로그래밍.Web Programing...</h1>
+        <!--h1~6 글자크기 숫자가 커질수록 글자가 작아짐-->
 
+        <h2>중부대학교 정보보호학과 김서진</h2>
+    
         <h3>
           웹 개발자를 위한 온라인 매뉴얼:
-          <a href="https://www.w3schools.com/"
-            >W3Schools: 웹프로그래밍 매뉴얼</a
-          >
+          <a href="https://www.w3schools.com/">w3schools.com</a>
+          <!--a href는 문자열(주소창 띄우는 함수)-->
+          <!--위에는 주소클릭하는 문자-->
         </h3>
-
+    
         <p>
           웹프로그래밍의 3가지 요소:
-          <a href="https://www.w3schools.com/html/default.asp">HTML5</a> |
-          <a href="https://www.w3schools.com/css/default.asp">CSS3</a> |
+          <a href="https://www.w3schools.com/html/default.asp">HTML</a> |
+          <a href="https://www.w3schools.com/css/default.asp">CSS</a> |
           <a href="https://www.w3schools.com/js/default.asp">Javascript</a>
         </p>
-
-        <p>현재 시간 : <span id="time"></span></p>
-        <hr />
-        <script>
-          function updateTime() {
-            const now = new Date()
-            const dateString = now.toLocaleDateString()
-            const timeString = now.toLocaleTimeString()
-            document.getElementById(
-              'time'
-            ).textContent = `${dateString} ${timeString}`
-          }
-          setInterval(updateTime, 1000)
-          updateTime() // 페이지 로드 시 즉시 시간 표시
-        </script>
-        <p>
-          배경색 바꾸기:
-          <button onclick="pink()">Pink</button>
-          <button onclick="lightblue()">Lightblue</button>
-          <button onclick="yellow()">Yellow</button>
-          <button onclick="reset()">Reset</button>
+    
+        <p>현재시간: <span id="time"></span> <!--id=이름설정 js에서 기능 만들 때 쓰는 이름-->
+        
+        <hr> <!--밑줄 긋기-->
+    
         </p>
-        <p>
-          배워봅시다:
-          <button onmouseover="showhtml()" onmouseout="hide()">HTML5</button>
-          <button onmouseover="showcss()" onmouseout="hide()">CSS3</button>
-          <button onmouseover="showjs()" onmouseout="hide()">Javascript</button>
+    
+        <p>배경색 바꾸기 : 
+            <button onclick="pink()">Pink</button>
+            <button onclick="Lightblue()">Lightblue</button>
+            <button onclick="Lightyellow()">Lightyellow</button> 
+            <button onclick="Reset()">Reset</button> <!--버튼 만드는 함수-->
         </p>
-        <hr />
-        <br />
+    
+        <p>
+            배워봅시다 : 
+            <button onmouseover="showhtml()" onmouseout="hide()">HTML</button>
+            <button onmouseover="showCSS()" onmouseout="hide()">CSS</button>
+            <button onmouseover="showjs()" onmouseout="hide()">JavaScript</button>
+        </p>
+    
+        <hr>
+            <!--<img src="https://i.namu.wiki/i/s1ClYLgQ6uPjvMUeqpJEutmzgTK_2nsTrVQk-fBHeZo-GuNqIoNQsZkX9Mp3KQC049p49WXh-jERhK2egIQ99vXnkG9KsYzp22rnpKVwzbP9BYo8UlX0nTaACqow0mOv-sFP3p6fYqxjIQQibnWp1w.webp" 
+            alt="error발생"
+            height="200px"--> 
         <div>
-          <img id="fig" height="200px" />
-          <p id="desc"></p>
+            <img id="fig" height="200px"/>
+            <p id = 'desc'></p>
+            <!--img는 그림 넣는 함수, src는 주소, height는 크기-->
         </div>
+    
+
       </div>
+
     </section>
+    
 
     <script src="main.js"></script>
   </body>

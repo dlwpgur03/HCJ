@@ -1,2 +1,66 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<!--Html을 선언하는 함수-->
+<html lang="en">
+  <head>
+    <!--여는태그-->
+    <meta charset="UTF-8" />
+    <!--동작파일은 UTF-8이다-->
+    <!--meta는 속성선언-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹프로그래밍</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--title태그를 바꿔주는 것 (위에뜨는 주소이름)-->
+  </head>
+  <!--닫는태그-->
+  <body>
+    <!-- 메뉴 -->
+    <nav class="navbar">
+      <!--class는 이름 설정(디자인으로 쓸 때 쓰는 설정정.)-->
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <!--div.logo라고 쳐도 자동 완성 된다.-->
+        <ul class="nav">
+          <li><a href="/">Home</a></li>
+          <!--링크 넣는 코드-->
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="team.html">Projects</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!--메뉴를 만드는 함수 nav (네비게이션) -->
+
+    <!-- 메인섹션 -->
+    <section class="main">
+      <div class="container">
+        <h1>Team name: CM (코딩마에스트로)</h1>
+        <!--h1~6 글자크기 숫자가 커질수록 글자가 작아짐-->
+        <hr />
+        <h1>이름: 김서진</h1>
+        <h1>학번: 92212764</h1>
+        <h3>
+          github 주소:
+          <a href="https://github.com/Daru0613">github.com/Daru0613</a>
+        </h3>
+        <hr />
+        <h1>이름: 이제혁</h1>
+        <h1>학번: 92212996</h1>
+        <h3>
+          github 주소:
+          <a href="https://github.com/dlwpgur03">github.com/dlwpgur03</a>
+        </h3>
+        <hr />
+        <h1>이름: 박한빈 (조장)</h1>
+        <h1>학번: 92212867</h1>
+        <h3>
+          github 주소:
+          <a href="https://github.com/han122400">github.com/han122400</a>
+        </h3>
+        <hr />
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
